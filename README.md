@@ -18,7 +18,6 @@ Looking at the numbers from size 2^10 up to 2^16, here is basically what happene
  this makes sense because both algorithms have to do extra math operations in every loop iteration just to keep track of the dropped bits.
 
 **Quick summary**
-
  -normal double is fine for the small stuff, but bad when you have big arrays and need precision. 
  -pairwise is basically it gives zero error and runs fast.
- - kahan and khnut are very accurate, but you pay a speed penalty for the extra error tracking math. 
+ -kahan and khnut are very accurate, but you pay a speed penalty for the extra error tracking math. 
