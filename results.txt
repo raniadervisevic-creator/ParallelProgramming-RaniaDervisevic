@@ -1,0 +1,43 @@
+GLOBAL SUM PRECISION AND PERFORMANCE TEST
+=======================================
+
+=======================================
+ARRAY SIZE: 2^10 = 1024 elements
+Reference sum: 51.20000004977600
+
+Standard double | Error: 7.105427357601e-15 | Runtime: 0.000001 s
+Long double     | Error: 0.000000000000e+00 | Runtime: 0.000001 s
+Pairwise        | Error: 7.105427357601e-15 | Runtime: 0.000001 s
+Kahan           | Error: 0.000000000000e+00 | Runtime: 0.000005 s
+Knuth           | Error: 0.000000000000e+00 | Runtime: 0.000002 s
+
+=======================================
+ARRAY SIZE: 2^12 = 4096 elements
+Reference sum: 204.80000020256003
+
+Standard double | Error: 5.115907697473e-13 | Runtime: 0.000004 s
+Long double     | Error: 0.000000000000e+00 | Runtime: 0.000004 s
+Pairwise        | Error: 0.000000000000e+00 | Runtime: 0.000003 s
+Kahan           | Error: 2.842170943040e-14 | Runtime: 0.000016 s
+Knuth           | Error: 2.842170943040e-14 | Runtime: 0.000006 s
+
+=======================================
+ARRAY SIZE: 2^14 = 16384 elements
+Reference sum: 819.20000081033606
+
+Standard double | Error: 4.547473508865e-12 | Runtime: 0.000016 s
+Long double     | Error: 0.000000000000e+00 | Runtime: 0.000012 s
+Pairwise        | Error: 0.000000000000e+00 | Runtime: 0.000012 s
+Kahan           | Error: 0.000000000000e+00 | Runtime: 0.000064 s
+Knuth           | Error: 0.000000000000e+00 | Runtime: 0.000037 s
+
+=======================================
+ARRAY SIZE: 2^16 = 65536 elements
+Reference sum: 3276.80000324288039
+
+Standard double | Error: 5.638867150992e-10 | Runtime: 0.000067 s
+Long double     | Error: 0.000000000000e+00 | Runtime: 0.000050 s
+Pairwise        | Error: 0.000000000000e+00 | Runtime: 0.000046 s
+Kahan           | Error: 0.000000000000e+00 | Runtime: 0.000269 s
+Knuth           | Error: 0.000000000000e+00 | Runtime: 0.000100 s
+
